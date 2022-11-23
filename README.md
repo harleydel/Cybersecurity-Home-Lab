@@ -1,7 +1,5 @@
 <h1>Cybersecurity Home Lab for Detection and Monitoring</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
 <h2>Description</h2>
 Nothing here yet.
 <br />
