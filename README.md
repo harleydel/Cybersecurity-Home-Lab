@@ -1,4 +1,4 @@
-<h1>JCybersecurity Home Lab for Detection and Monitoring</h1>
+<h1>Cybersecurity Home Lab for Detection and Monitoring</h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
