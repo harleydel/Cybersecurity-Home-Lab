@@ -31,6 +31,14 @@
 </p>
 
 <h3><a id = "pfSense">Configuring pfSense</a></h3>
+<ol>
+ <li>Create new virtual machine using FreeBSD 64 bit.</li>
+ <li>Increase memory size to 2GB.</li>
+ <li>Create VMDK Hard Disk to ensure that it can later on be used by VMWare if I ever upgrade.</li>
+ <li>Set as Dynamically Allocated and choose the split option.</li>
+ <li>Increase file size to 20 GB.</li>
+ <li>Upload the iso file to storage.</li>
+ <li>
 
 <br />
 
