@@ -19,12 +19,12 @@
 <h3>My Host PC</h3>
 <p>I will be using my PC which I started to build in 2022 and have slowly been upgrading since I got it. The specs are as followed:
  
- CPU: Intel® Core™ i7-12700F Processor
- RAM: XPG GAMMIX D20 DDR4 3600MHz 32GB (4x8GB)
- STORAGE: WD_BLACK 500GB+1TB SN770 NVMe Internal Gaming SSD Solid State Drive 
- GRAPHICS CARD: EVGA GeForce RTX 3070 FTW3 Ultra Gaming
- MOTHERBOARD: ASUS TUF GAMING Z690-PLUS WIFI
- HOST OS: Ubuntu (500 GB) + Windows 11 Home (1000 TB) *The Ubuntu OS will be used for this project*
+ <b>CPU</b>: Intel® Core™ i7-12700F Processor<br>
+ RAM: XPG GAMMIX D20 DDR4 3600MHz 32GB (4x8GB)<br>
+ STORAGE: WD_BLACK 500GB+1TB SN770 NVMe Internal Gaming SSD Solid State Drive<br>
+ GRAPHICS CARD: EVGA GeForce RTX 3070 FTW3 Ultra Gaming<br>
+ MOTHERBOARD: ASUS TUF GAMING Z690-PLUS WIFI<br>
+ HOST OS: Ubuntu (500 GB) + Windows 11 Home (1000 TB) *The Ubuntu OS will be used for this project*<br>
 </p>
 <br />
 
