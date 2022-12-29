@@ -5,7 +5,7 @@
 <p> The goal of this project is to create a small Homelab environment used to practice and and improve my skills as a Cybersecurity Analyst. I will be following a guide made by Cyberwox Academy that can be found <a href = "https://cyberwoxacademy.com/building-a-cybersecurity-homelab-for-detection-monitoring/">here</a>. With that said, this writeup will still be in my own words and including my own experiences and learning process throughout the project.</p>
 <h3> Content </h3>
 <ul>
- <li><a id="host"My Host PC</a></li>
+ <li><a id="host">My Host PC</a></li>
  <li>Configuring pfSense firewall for Network Segmentation & Security using VirtualBox</li>
  <li>Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</li>
  <li>Configuring Kali Linux as an attack machine</li>
