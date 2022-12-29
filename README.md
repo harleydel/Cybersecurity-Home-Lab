@@ -16,7 +16,7 @@
 </ul>
 <h3>Homelab Network Design & Topology</h3>
 <img src = "https://static.wixstatic.com/media/1f97f7_c3819a585fb44cc896e93c99d512ba1a~mv2.jpg/v1/fill/w_740,h_496,al_c,q_90/1f97f7_c3819a585fb44cc896e93c99d512ba1a~mv2.webp"/>
-<h3 id="host">My Host PC</h3>
+<h3 a id="host">My Host PC</h3>
 <p>I will be using my PC which I started to build in 2022 and have slowly been upgrading since I got it. The specs are as followed:
  
  <b>CPU</b>: Intel® Core™ i7-12700F Processor<br>
