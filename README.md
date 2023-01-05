@@ -32,13 +32,21 @@
 
 <h3><a id = "pfSense">Configuring pfSense</a></h3>
 <ol>
- <li>Create new virtual machine using FreeBSD 64 bit.</li>
- <li>Increase memory size to 2GB.</li>
- <li>Create VMDK Hard Disk to ensure that it can later on be used by VMWare if I ever upgrade.</li>
- <li>Set as Dynamically Allocated and choose the split option.</li>
- <li>Increase file size to 20 GB.</li>
- <li>Upload the iso file to storage.</li>
- <li>
+ <li>Creating the virtual machine in VMware.</li>
+  <ul>
+   <li>Keep 20 GB disk size.</li>
+   <li>Make sure "split virtual disk into multiple files" is selected.</li>
+   <li>Click customize hardware and add 5 network adapters. Note: When I did this and went to choose the "custom" option for each there wasn't enough 
+    vmnet options there already. I had to go into the virtual network editor and add a few more, each with the "host-only" configuration. At this step
+    you can also remove the sound adapter and usb controller.</li>
+  </ul>
+ <li>Installing pfSense</li>
+  <ol>
+   <li>Choose install and accept all defaults until you get to the "Partitioning" screen in which you will go down one and choose "Auto (UFS) BIOS"</li>
+   <li>Once pfSense is installed and has rebooted now we will configure the interface IP addresses. (This is all covered in the CyberWox Academy
+   walkthrough.)</li> 
+  </ol>
+</ol>
 
 <br />
 
