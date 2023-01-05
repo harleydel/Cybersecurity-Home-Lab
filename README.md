@@ -45,6 +45,8 @@
    <li>Choose install and accept all defaults until you get to the "Partitioning" screen in which you will go down one and choose "Auto (UFS) BIOS"</li>
    <li>Once pfSense is installed and has rebooted now we will configure the interface IP addresses. (This is all covered in the CyberWox Academy
    walkthrough.)</li> 
+   <li>After the IP address configurations are done, pfSense is now installed and the rest of the configuration will happen through the webConfigurator
+    in Kali.</li>
   </ol>
 </ol>
 
