@@ -24,10 +24,11 @@
  
  <b>CPU</b>: Intel® Core™ i7-12700F Processor<br>
  <b>RAM</b>: XPG GAMMIX D20 DDR4 3600MHz 32GB (4x8GB)<br>
- <b>STORAGE</b>: WD_BLACK 500GB+1TB SN770 NVMe Internal Gaming SSD Solid State Drive<br>
+ <b>STORAGE</b>: WD_BLACK 500GB+1TB+1TB SN770 NVMe Internal Gaming SSD Solid State Drive<br>
  <b>GRAPHICS CARD</b>: EVGA GeForce RTX 3070 FTW3 Ultra Gaming<br>
  <b>MOTHERBOARD</b>: ASUS TUF GAMING Z690-PLUS WIFI<br>
- <b>HOST OS</b>: Ubuntu (500 GB) + Windows 11 Home (1000 TB) *The Ubuntu OS will be used for this project*<br>
+ <b>HOST OS</b>: Ubuntu (500 GB) + Windows 11 Home (1000 TB) + Ubuntu (1 TB) *Will be using this third SSD I purchased solely to build
+ out my Home Lab and use for future projects!*<br>
 </p>
 
 <h3><a id = "pfSense">Configuring pfSense</a></h3>
