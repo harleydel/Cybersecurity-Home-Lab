@@ -7,8 +7,8 @@
 <h3> Content </h3>
 <ul>
  <li><a href="#host">My Host PC</a></li>
- <li><a href="#pfSense">Configuring pfSense firewall for Network Segmentation & Security using VMware</a></li>
- <li><a href="#SecurityOnion">Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</a></li>
+ <li><a href="#pfsense">Configuring pfSense firewall for Network Segmentation & Security using VMware</a></li>
+ <li><a href="#securityonion">Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</a></li>
  <li>Configuring Kali Linux as an attack machine</li>
  <li>Configuring a Windows Server as a Domain Controller</li>
  <li>Configuring Windows Desktops</li>
@@ -31,7 +31,7 @@
  out my Home Lab and use for future projects!*<br>
 </p>
 
-<h3><a id = "pfSense">Configuring pfSense as the firewall</a></h3>
+<h3><a id = "pfsense">Configuring pfSense as the firewall</a></h3>
 
 <ol>
  <li>Creating the virtual machine in VMware.</li>
@@ -53,7 +53,7 @@
 </ol>
 <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-pfSense-Firewall">Click here to view photo documentation for each step of the pfSense process.</a>
 
-<h3><a id = "SecurityOnion">Configuring Security Onion as the IDS, Security Monitoring, and Log Management</a></h3>
+<h3><a id = "securityonion">Configuring Security Onion as the IDS, Security Monitoring, and Log Management</a></h3>
 <ol>
  <li>Creating the virtual machine in VMware.</li>
   <ul>
