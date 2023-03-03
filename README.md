@@ -50,6 +50,7 @@
     in Kali.</li>
   </ol>
 </ol>
+<a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-pfSense-Firewall">Click here to view photo documentation for each step of the pfSense process.</a>
 
 <br />
 
