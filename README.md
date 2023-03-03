@@ -7,7 +7,7 @@
 <h3> Content </h3>
 <ul>
  <li><a href="#host">My Host PC</a></li>
- 
+ <li><a href="#pfSense">Configuring pfSense firewall for Network Segmentation & Security using VMware</a></li>
  <li>Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</li>
  <li>Configuring Kali Linux as an attack machine</li>
  <li>Configuring a Windows Server as a Domain Controller</li>
