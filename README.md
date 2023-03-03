@@ -70,7 +70,13 @@
     <li>Make sure you select NO at the "so allow" window.</li>
    </ul>
   </ol>
- <li>
+ <li>Configuring Security Onion through Ubuntu Desktop</li>
+  <ul>
+   <li>For this step you will install a new Ubuntu Desktop VM in VMware. I won't go over the details as this is pretty simple and I followed all defaults on installation.</li>
+   <li>Once Ubuntu is installed you will run the ifconfig command to identify your IP address.</li>
+   <li>You will then go back to security onion and run the "sudo so-allow" command, enter your password, and then when prompted type in the IP address from Ubuntu.</li>
+   <li>You can then navigate to the Security Onion IP address on Ubuntu to view the Security Onion Web Interface.</li>
+ </ul>
 </ol>
 <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Security-Onion">Click here to view photo documentation for each step of the SecurityOnion process.</a>
 
