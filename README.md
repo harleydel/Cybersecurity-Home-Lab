@@ -31,7 +31,7 @@
  out my Home Lab and use for future projects!*<br>
 </p>
 
-<h3><a id = "pfSense">Configuring pfSense</a></h3>
+<h3><a id = "pfSense">Configuring pfSense as the firewall</a></h3>
 <ol>
  <li>Creating the virtual machine in VMware.</li>
   <ul>
@@ -51,6 +51,26 @@
   </ol>
 </ol>
 <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-pfSense-Firewall">Click here to view photo documentation for each step of the pfSense process.</a>
+
+<h3><a id = "SecurityOnion">Configuring Security Onion as the IDS, Security Monitoring, and Log Management</a></h3>
+<ol>
+ <li>Creating the virtual machine in VMware.</li>
+  <ul>
+   <li>Increase to 200 GB disk size.</li>
+   <li>Make sure "store virtual disk as a single file" is selected.</li>
+   <li>Click "Customize Hardware" and increase the memory to somewhere between 4-32GB, and add two Network Adapters assigned to Vmnet 4 and Vmnet 5.</li>
+  </ul>
+ <li>Installing Security Onion</li>
+  <ol>
+   <li>For the most part you will be accepting defaults for everything but there are a few selections needed to be changed as follows:</li>
+   <ul>
+    <li>Change from STATIC to DHCP on the management interface window.</li>
+    <li>Choose ens35 on the NIC Monitor Interface window.</li>
+    <li>Make sure you select NO at the "so allow" window.</li>
+   </ul>
+  </ol>
+ <li>
+</ol>
 
 <br />
 
