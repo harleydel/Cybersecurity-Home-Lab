@@ -8,7 +8,7 @@
 <ul>
  <li><a href="#host">My Host PC</a></li>
  <li><a href="#pfSense">Configuring pfSense firewall for Network Segmentation & Security using VMware</a></li>
- <li><a href="#SecurityOnion">Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution<</a>/li>
+ <li><a href="#SecurityOnion">Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</a>/li>
  <li>Configuring Kali Linux as an attack machine</li>
  <li>Configuring a Windows Server as a Domain Controller</li>
  <li>Configuring Windows Desktops</li>
