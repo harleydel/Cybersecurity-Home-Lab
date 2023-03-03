@@ -32,6 +32,7 @@
 </p>
 
 <h3><a id = "pfSense">Configuring pfSense as the firewall</a></h3>
+
 <ol>
  <li>Creating the virtual machine in VMware.</li>
   <ul>
