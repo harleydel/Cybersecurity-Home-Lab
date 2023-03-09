@@ -80,6 +80,15 @@
 </ol>
 <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Security-Onion">Click here to view photo documentation for each step of the SecurityOnion process.</a>
 
+<h3><a id = "securityonion">Installing Kali Linux to use as the attack machine.</a></h3>
+<ol>
+ <li>Installing Kali Linux</li>
+  <ul>
+   <li>For the most part I followed all defaults with installing Kali, so I didn't list all of the details and screenshots. The only <b>important thing to change is the Network Adapter to Vmnet2.</b></li>
+   <li>The Kali Linux machine will be used as an attack machine against the Domain Controller, and other machines attached to it. I plan to install machines from VulnHub and other similar sites to practice my red team skills, paired with Security Onion and pfSense for blue team skills.</li>
+  </ul>
+</ol>
+
 <br />
 
 <!--
