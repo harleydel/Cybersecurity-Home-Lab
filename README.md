@@ -109,6 +109,8 @@
   <li>Navigate to "Assignments" under "Interfaces". On this window click "Bridges" > "Add", on this next window select "VICTIMNETWORK" in the "Member Interfaces" menu, and then click "Advanced Configuration" and select "SPANPORT" under the Span Port menu, click "Save" at the bottom of the window.</li>
   <li>Next, navigate to "Rules" under "Firewall" in the top menu. Click the "Add" button with the downward facing arrow. On this page under "edit firewall rule" select "Any" in the "Protocol" dropdown box. Scroll to the bottom and click "Save".</li>
 </ol>
+ 
+ <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Configuring-Interfaces-and-Firewall-Settings-through-the-pfSense-WebConfigurator">Click here to view photo documentation for each step of the pfSense configuration process.</a>
 
 <br />
 
