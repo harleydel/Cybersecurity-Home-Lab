@@ -10,6 +10,7 @@
  <li><a href="#pfsense">Configuring pfSense firewall for Network Segmentation & Security using VMware</a></li>
  <li><a href="#securityonion">Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</a></li>
  <li><a href="#kali">Configuring Kali Linux as an attack machine</a></li>
+ <li><a href="#pfconfig">pfSense Interfaces and Firewall Rules</a></li>
  <li>Configuring a Windows Server as a Domain Controller</li>
  <li>Configuring Windows Desktops</li>
  <li>Configuring Splunk</li>
@@ -89,7 +90,7 @@
   </ul>
 </ol>
 
-<h3><a id = "pfconfig">Configuring pfSense Interfaces and Rules</a></h3>
+<h3><a id = "pfconfig">pfSense Interfaces and Rules</a></h3>
 <ol>
  <li>Accessing the pfSense WebConfigurator</li>
   <ul>
