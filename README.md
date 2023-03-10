@@ -9,7 +9,7 @@
  <li><a href="#host">My Host PC</a></li>
  <li><a href="#pfsense">Configuring pfSense firewall for Network Segmentation & Security using VMware</a></li>
  <li><a href="#securityonion">Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</a></li>
- <li>Configuring Kali Linux as an attack machine</li>
+ <li><a href="#kali">Configuring Kali Linux as an attack machine</a></li>
  <li>Configuring a Windows Server as a Domain Controller</li>
  <li>Configuring Windows Desktops</li>
  <li>Configuring Splunk</li>
@@ -80,12 +80,21 @@
 </ol>
 <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Security-Onion">Click here to view photo documentation for each step of the SecurityOnion process.</a>
 
-<h3><a id = "securityonion">Installing Kali Linux to use as the attack machine.</a></h3>
+<h3><a id = "kali">Installing Kali Linux to use as the attack machine.</a></h3>
 <ol>
  <li>Installing Kali Linux</li>
   <ul>
    <li>For the most part I followed all defaults with installing Kali, so I didn't list all of the details and screenshots. The only <b>important thing to change is the Network Adapter to Vmnet2.</b></li>
    <li>The Kali Linux machine will be used as an attack machine against the Domain Controller, and other machines attached to it. I plan to install machines from VulnHub and other similar sites to practice my red team skills, paired with Security Onion and pfSense for blue team skills.</li>
+  </ul>
+</ol>
+
+<h3><a id = "pfconfig">Configuring pfSense Interfaces and Rules</a></h3>
+<ol>
+ <li>Accessing the pfSense WebConfigurator</li>
+  <ul>
+   <li>The pfSense WebConfigurator will be acccessed from Kali Linux to make changes to the pfSense interface and firewall rules.</li>
+   <li>The initial step is to load up Kali and access the pfSense WebConfigurator from a browser at the 192.168.1.1 IP. Initially when setting this up I had two issues. The first is that when going to the IP, I was taken to the page for my home router login, rather than pfSense. To fix this I simply had to remove my NAT network adapter from my Kali settings. The next issue was not being able to connect to the IP at all, which I fixed by releasing and renewing my IP on my Kali machine. On a Windows machine, I know that this can be done with ipconfig /release and ipconfig /renew. On Linux I found that the equivalent to this was dhclient -r eth0 to release, and dhclient eth0 to renew, which fixed my issues and allowed me to continue to the WebConfigurator</li>
   </ul>
 </ol>
 
