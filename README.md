@@ -96,6 +96,18 @@
    <li>The pfSense WebConfigurator will be acccessed from Kali Linux to make changes to the pfSense interface and firewall rules.</li>
    <li>The initial step is to load up Kali and access the pfSense WebConfigurator from a browser at the 192.168.1.1 IP. Initially when setting this up I had two issues. The first is that when going to the IP, I was taken to the page for my home router login, rather than pfSense. To fix this I simply had to <b>remove my NAT network adapter from my Kali settings.</b> The next issue was not being able to connect to the IP at all, which I fixed by releasing and renewing my IP on my Kali machine. On a Windows machine, I know that this can be done with ipconfig /release and ipconfig /renew. On Linux I found that the equivalent to this was <b>dhclient -r eth0 to release, and dhclient eth0 to renew</b>, which fixed my issues and allowed me to continue to the WebConfigurator</li>
   </ul>
+ <li>Configuring the Interface and Firewall settings using WebConfigurator</li>
+ <ol>
+  <li>When the pfSense WebConfigurator is accessed, the login is "admin" for username, and "pfSense" for password.</li>
+  <li>After clicking through to step 2 of 9, add 8.8.8.8 as the Primary DNS Server, and 4.4.4.4 as the Secondary DNS server.</li>
+  <li>At step 3 of 9 you choose your timezone.</li>
+  <li>At step 4 of 9 everything is left alone side from unchecking the last two options.</li>
+  <li>At step 6 of 9 the admin password is set.</li>
+  <li>After clicking "reload" at step 7, the pfSense Wizard is complete and now on to changing the Interface configurations.</li>
+  <li>Navigate to LAN under "Interfaces" in the top menu, and change theh Description to Kali and click save.</li>
+  <li>Repeat the same process to change the names and Network Ports of each interface to what is shown in the screenshots (link below). For OPT3 which will be changed to "SpanPort", make sure to click the "Enable Interface" checkbox.</li>
+  <li>Navigate to "Assignments" under "Interfaces". On this window click "Bridges" > "Add", on this next window select "VICTIMNETWORK" in the "Member Interfaces" menu, and then click "Advanced Configuration" and select "SPANPORT" under the Span Port menu, click "Save" at the bottom of the window.</li>
+  <li>Next, navigate to "Rules" under "Firewall" in the top menu. Click the "Add" button with the downward facing arrow. On this page under "edit firewall rule" select "Any" in the "Protocol" dropdown box. Scroll to the bottom and click "Save".</li>
 </ol>
 
 <br />
