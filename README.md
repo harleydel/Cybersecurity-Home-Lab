@@ -94,7 +94,7 @@
  <li>Accessing the pfSense WebConfigurator</li>
   <ul>
    <li>The pfSense WebConfigurator will be acccessed from Kali Linux to make changes to the pfSense interface and firewall rules.</li>
-   <li>The initial step is to load up Kali and access the pfSense WebConfigurator from a browser at the 192.168.1.1 IP. Initially when setting this up I had two issues. The first is that when going to the IP, I was taken to the page for my home router login, rather than pfSense. To fix this I simply had to remove my NAT network adapter from my Kali settings. The next issue was not being able to connect to the IP at all, which I fixed by releasing and renewing my IP on my Kali machine. On a Windows machine, I know that this can be done with ipconfig /release and ipconfig /renew. On Linux I found that the equivalent to this was dhclient -r eth0 to release, and dhclient eth0 to renew, which fixed my issues and allowed me to continue to the WebConfigurator</li>
+   <li>The initial step is to load up Kali and access the pfSense WebConfigurator from a browser at the 192.168.1.1 IP. Initially when setting this up I had two issues. The first is that when going to the IP, I was taken to the page for my home router login, rather than pfSense. To fix this I simply had to <b>remove my NAT network adapter from my Kali settings.</b> The next issue was not being able to connect to the IP at all, which I fixed by releasing and renewing my IP on my Kali machine. On a Windows machine, I know that this can be done with ipconfig /release and ipconfig /renew. On Linux I found that the equivalent to this was <b>dhclient -r eth0 to release, and dhclient eth0 to renew</b>, which fixed my issues and allowed me to continue to the WebConfigurator</li>
   </ul>
 </ol>
 
