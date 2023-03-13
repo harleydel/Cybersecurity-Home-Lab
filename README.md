@@ -146,6 +146,25 @@
 </ol>
  
  <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Windows-Server-2019-as-Domain-Controller">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
+ 
+<h3><a id = "windowsdesktop">Configuring Windows 10 Desktops and Adding a User to the Active Directory Domain</a></h3>
+<ol>
+ <li>Creating the Windows Desktop Virtual Machines</li>
+  <ol>
+   <li>Most of the initial settings here will be the same as setting up the Windows Server machine. Start by creating the virtual machine in VMware, accepting all defaults, skipping the product key, changing the network adapter to Vmnet3, unchecking the box to power on after creation, and removing the floppy drive.</li>
+   <li>The name for this machine will be the name of the first user created in the previous steps.</li>
+   <li>Once Windows is installed on this machine, configure Windows 10 like normal whenever installing Windows on any desktop. Select "I don't have internet", continue with limited setup, and set the first user and password to the same as the settings created in the Domain Controller setup. Uncheck ALL of the privacy settings, choose "Not Now" for Cortana, and then restart the PC."</li>
+   <li>Follow all the same steps in setting up a second Windows 10 Desktop Virtual Machine using the credentials of the second user created during the Domain Controller setup.</li>
+ </ol>
+ <li>Joining the PCs to the Domain</li>
+  <ol>
+   <li>On the first Windows Desktop machine we just created, navigate through "Network Adapter Settings" to the same "Internet Protocol Version 4 Properties" window that we used to configure the Domain Controller in the previous step.</li>
+   <li>Here you will set the following IP settings: IP address: 192.168.2.21, Subnet Mask: 255.255.255.0, Default Gateway: 192.168.2.1, Preferred DNS Server: 192.168.2.10.</li>
+   <li>After that is all setup, search "Domain" in the windows search bar, and select "Access work or school". Select "Connect" > "Join this device to local Active Directory Domain" > Enter the domain name you set in the Domain Controller step (remember to include .local at the end).</li>
+ </ol>
+</ol>
+ 
+ <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Windows-Server-2019-as-Domain-Controller">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
 <br />
 
 <!--
