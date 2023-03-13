@@ -11,7 +11,7 @@
  <li><a href="#securityonion">Configuring Security Onion as an all-in-one IDS, Security Monitoring, and Log Management Solution</a></li>
  <li><a href="#kali">Configuring Kali Linux as an attack machine</a></li>
  <li><a href="#pfconfig">pfSense Interfaces and Firewall Rules</a></li>
- <li>Configuring a Windows Server as a Domain Controller</li>
+ <li><a href="#windowsserver">Configuring a Windows Server as a Domain Controller</a></li>
  <li>Configuring Windows Desktops</li>
  <li>Configuring Splunk</li>
  <li>Potential Linux machines added for exploitation, detection, or monitoring purposes</li>
@@ -110,9 +110,31 @@
   <li>Navigate to "Assignments" under "Interfaces". On this window click "Bridges" > "Add", on this next window select "VICTIMNETWORK" in the "Member Interfaces" menu, and then click "Advanced Configuration" and select "SPANPORT" under the Span Port menu, click "Save" at the bottom of the window.</li>
   <li>Next, navigate to "Rules" under "Firewall" in the top menu. Click the "Add" button with the downward facing arrow. On this page under "edit firewall rule" select "Any" in the "Protocol" dropdown box. Scroll to the bottom and click "Save".</li>
 </ol>
+</ol>
  
  <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Configuring-Interfaces-and-Firewall-Settings-through-the-pfSense-WebConfigurator">Click here to view photo documentation for each step of the pfSense configuration process.</a>
 
+
+<h3><a id = "windowsserver">Configuring Windows Server as a Domain Controller</a></h3>
+<ol>
+ <li>Creating Windows Server Virtual Machine on VMware</li>
+  <ul>
+   <li>When installing Windows Server, we will installing with mostly defaults but there are a few things to make sure of.</li>
+    <ol>
+     <li>When you get to the window asking for product key, simply click "Next" and then "Yes" to continue without a product key.</li>
+     <li>At the end of the initial setup, <b>make sure to change the network adapter to VMnet3, and uncheck "Power on Virtual Machine after creation."</b>, then click finish.</li>
+     <li>Once all that is done, <b>click "Edit virtual machine settings" and remove the Floppy drive.</b></li>
+    </ol>
+  </ul>
+ <li>Windows Server Installation</li>
+  <ol>
+   <li>Power on the Windows Server Virtual Machine.</li>
+   <li>Click "Install Now" and then "Next". When you get to the window asking for the Windows Server version choose <b>"Windows Server 2019 Standard Evaluation (Desktop Experience)"</b></li>
+   <li>Click "Custom: Install Windows only (advanced)". When on the partitioning screen, click "New" > "Apply" > "OK" > "Next" and wait for installation to complete.</li>
+  </ol>
+</ol>
+ 
+ <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Configuring-Interfaces-and-Firewall-Settings-through-the-pfSense-WebConfigurator">Click here to view photo documentation for each step of the pfSense configuration process.</a>
 <br />
 
 <!--
