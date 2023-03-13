@@ -12,7 +12,7 @@
  <li><a href="#kali">Configuring Kali Linux as an attack machine</a></li>
  <li><a href="#pfconfig">pfSense Interfaces and Firewall Rules</a></li>
  <li><a href="#windowsserver">Configuring a Windows Server as a Domain Controller</a></li>
- <li>Configuring Windows Desktops</li>
+ <li><a href="#windowsdesktop">Configuring Windows Desktops</a></li>
  <li>Configuring Splunk</li>
  <li>Potential Linux machines added for exploitation, detection, or monitoring purposes</li>
 </ul>
@@ -167,7 +167,7 @@
  </ol>
 </ol>
  
- <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Windows-Server-2019-as-Domain-Controller">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
+ <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-Windows-10-Desktop-Machines-and-Joining-to-the-Domain">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
 <br />
 
 <!--
