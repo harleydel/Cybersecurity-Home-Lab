@@ -159,8 +159,11 @@
  <li>Joining the PCs to the Domain</li>
   <ol>
    <li>On the first Windows Desktop machine we just created, navigate through "Network Adapter Settings" to the same "Internet Protocol Version 4 Properties" window that we used to configure the Domain Controller in the previous step.</li>
-   <li>Here you will set the following IP settings: IP address: 192.168.2.21, Subnet Mask: 255.255.255.0, Default Gateway: 192.168.2.1, Preferred DNS Server: 192.168.2.10.</li>
-   <li>After that is all setup, search "Domain" in the windows search bar, and select "Access work or school". Select "Connect" > "Join this device to local Active Directory Domain" > Enter the domain name you set in the Domain Controller step (remember to include .local at the end).</li>
+   <li>Here you will set the following IP settings: <b>IP address: 192.168.2.21, Subnet Mask: 255.255.255.0, Default Gateway: 192.168.2.1, Preferred DNS Server: 192.168.2.10.</b></li>
+   <li>After that is all setup, <b>search "Domain" in the windows search bar, and select "Access work or school". Select "Connect" > "Join this device to local Active Directory Domain" > Enter the domain name you set in the Domain Controller step (remember to include .local at the end).</b></li>
+   <li><b>At this step you will get an error message which is normal.</b> You now need to navigate to the pfSense WebConfigurator. Once here, navigate to "Services" > "DHCP Server" > "VICTIMNETWORK" > "Other Options" > "Domain Name" and type in the domain name from before. </li>
+   <li>Now go back to the Windows Desktop machines and joining the domain should work. You will now enter the Username as "Administrator" and the password you set for your Domain Controller. Select "Skip" > Restart your computer.</li>
+   <li>Duplicate all of these steps for the second Windows 10 Desktop machine and this step is done.</li>
  </ol>
 </ol>
  
