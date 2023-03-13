@@ -130,8 +130,16 @@
   <ol>
    <li>Power on the Windows Server Virtual Machine.</li>
    <li>Click "Install Now" and then "Next". When you get to the window asking for the Windows Server version choose <b>"Windows Server 2019 Standard Evaluation (Desktop Experience)"</b></li>
-   <li>Click "Custom: Install Windows only (advanced)". When on the partitioning screen, click "New" > "Apply" > "OK" > "Next" and wait for installation to complete.</li>
+   <li>Click <b>"Custom: Install Windows only (advanced)". When on the partitioning screen, click "New" > "Apply" > "OK" > "Next"</b> and wait for installation to complete.</li>
+   <li>At the final screen, create an admin password and then you should be taken to the Windows Server lock screen.</li>
   </ol>
+ <li>Windows Server Configurations</li>
+  <ol>
+   <li>First thing to do is change the name of the Domain Controller. This can be done by going to settings, searching for "pc name", and then renaming your PC. Once this is done, restart the Domain Controller.</li>
+   <li>Once the DC is rebooted, <b>click on "Add Roles and Features" under the "Manage" menu option</b>. Once here, keep clicking "Next" until you reach the <b>"Server Roles" menu. At this menu, select the checkbox for "Active Directory Domain Services", and then "Add Features".</b> Keep clicking "Next" until you're at the confirmation menu, and click "Install".</li>
+   <li>Once this installation is done, you will see a flag with a yellow caution triangle in the top menu. Click it and then <b>select "Promote this server to a domain controller". Select "Add a new forest"</b>, specify a domain name, set a password, and continue clicking "Next" until you're at the "Prerequisites Check" menu. Click "Install" and wait for the DC to reboot.</li>
+   
+ </ol>
 </ol>
  
  <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Configuring-Interfaces-and-Firewall-Settings-through-the-pfSense-WebConfigurator">Click here to view photo documentation for each step of the pfSense configuration process.</a>
