@@ -168,6 +168,16 @@
 </ol>
  
  <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-Windows-10-Desktop-Machines-and-Joining-to-the-Domain">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
+ 
+ <h3><a id = "splunk">Installing and Configuring Splunk on Ubuntu Server as our SIEM</a></h3>
+<ol>
+ <li> The first step is to install Ubuntu Server onto VMware. For this step, all defaults are accepted for the most part. <b>The only important things to change are: give at least 80 gb to the Hard Disk (I gave 100 gb), remove the USB controller, sound card, and printer, and then add a second Network Adapter configured with VMnet6.</b></li>
+ <li>Once the Ubuntu Server VM is setup, run it and install with all defaults. <b>Make sure to select "Install OpenSSH Server" when asked.</b></li>
+ <li>Once everything is installed, and you have rebooted the machine, login with the credentials you created during installation.</li>
+ <li>We will now install a GUI on our Ubuntu Server. To do this type <b>"Sudo apt install tasksel". Once that is done type "Sudo apt install ubuntu-desktop".</b> When that is finished installing, reboot the machine.</li>
+</ol>
+ 
+ <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-Windows-10-Desktop-Machines-and-Joining-to-the-Domain">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
 <br />
 
 <!--
