@@ -13,7 +13,7 @@
  <li><a href="#pfconfig">pfSense Interfaces and Firewall Rules</a></li>
  <li><a href="#windowsserver">Configuring a Windows Server as a Domain Controller</a></li>
  <li><a href="#windowsdesktop">Configuring Windows Desktops</a></li>
- <li>Configuring Splunk</li>
+ <li><a href="#splunk">Configuring Splunk</a></li>
  <li>Potential Linux machines added for exploitation, detection, or monitoring purposes</li>
 </ul>
 
@@ -175,6 +175,8 @@
  <li>Once the Ubuntu Server VM is setup, run it and install with all defaults. <b>Make sure to select "Install OpenSSH Server" when asked.</b></li>
  <li>Once everything is installed, and you have rebooted the machine, login with the credentials you created during installation.</li>
  <li>We will now install a GUI on our Ubuntu Server. To do this type <b>"Sudo apt install tasksel". Once that is done type "Sudo apt install ubuntu-desktop".</b> When that is finished installing, reboot the machine.</li>
+ <li>Once the machine is rebooted, it should start up with a GUI rather than terminal only. Log in and click through the typical installation defaults for ubuntu. Open a web browser (my installation didn't come with one so I installed Firefox) and navigate to splunk.com. At the top right corner <b>click "Free Splunk"</b>, and if you do not already have a Splunk account, create one. Once that is done, navigate to Products > Free Trials & Downloads > Splunk Enterprise Free Trial. <b>Under "Choose your installation package", choose Linux, and download the .tgz version of Splunk Enterprise.</b></li>
+ <li>Once Splunk is downloaded, go back to the terminal and cd to the Downloads directory. <b>Untar the file with the command "tar xvzf [name of download file]".</b> Next navigate to the splunk/bin directory and <b>start splunk with the command "./splunk start".</b>Next, scroll to the bottom of the readme doc and select yes, and then create a username and password and wait for the splunk interface to finish starting up.</li>
 </ol>
  
  <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-Windows-10-Desktop-Machines-and-Joining-to-the-Domain">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
