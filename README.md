@@ -180,7 +180,7 @@
  <li>Now navigate to the splunk instance on your browser by going to "http://splunk:8000" and login.</li>
 </ol>
  
- <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-Windows-10-Desktop-Machines-and-Joining-to-the-Domain">Click here to view photo documentation for each step of the Windows Server configuration process.</a>
+ <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Splunk-on-Ubuntu-Server-as-our-SIEM">Click here to view photo documentation for each step of the Splunk configuration process.</a>
 <br />
 
 <!--
