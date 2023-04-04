@@ -14,6 +14,7 @@
  <li><a href="#windowsserver">Configuring a Windows Server as a Domain Controller</a></li>
  <li><a href="#windowsdesktop">Configuring Windows Desktops</a></li>
  <li><a href="#splunk">Configuring Splunk</a></li>
+ <li><a href="#forwarding">Installing Universal Forwarder on Windows Server</a></li>
  <li>Potential Linux machines added for exploitation, detection, or monitoring purposes</li>
 </ul>
 
@@ -181,6 +182,20 @@
 </ol>
  
  <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Splunk-on-Ubuntu-Server-as-our-SIEM">Click here to view photo documentation for each step of the Splunk configuration process.</a>
+ 
+  <h3><a id = "forwarding">Installing Universal Forwarded on Windows Server</a></h3>
+<ol>
+ <li>The final step is to configure the Universal Forwarder to be able to send Windows Event Logs to Splunk. To do this, first start up your Splunk instance and log in through the browser.</li>
+ <li>When logged in, navigate to Settings > Forwarding and Receiving > Configure Receiving > Click "New Receiving Port". <b>Set "Listen on this port" to port 9997</b>, and click "save".</li>
+ <li>Next, go to Settings > Indexes > New Index, for "Index Name" name it "wineventlog", leave everything else alone and click save.</li>
+ <li>Now open the Windows Server Domain Controller and open internet explorer. Go to Settings > Internet Options > Custom Level, and enable downloads. I now used Internet Explorer to download Google Chrome for the Universal Forwarder download (since we all know how horrible Internet Explorer is). <b>One issue I had here is initially my Windows Server not having any internet connection. To fix this, I went to pfSense WebConfigurator through Kali then navigated to Firewalls > Rules > VictimNetwork > Click "Add" with the option of the downward pointing arrow. On the next screen, change Action > Pass, Protocol > Any, Source > Any, and Destination > Any.</b> After doing this I went back to the Domain Controller and had internet connection.</li>
+ <li>Once Chrome is installed, go to Google and search for "Universal Forwarder", go to the Splunk website and login. Once logged in go to Products > Free Trials & Downloads > Universal Forwarder, and download the .msi for Windows Server.</li>
+ <li>Once that is downloaded, double click to open the installer. On the first window, click the checkbox to accept the License Agreement, then click next. Create a username and password, click next. <b>For the Deployment Server Hostname or IP, this will be the IP of your Splunk interface, with the port 8089. For the Receiving Indexer, this will be the same IP with port 9997.</b> Click Install.</li>
+ <li>Next you will head back to your Splunk interface, and on the browser navigate to Settings > Add Data > Forwarder. On this screen, under "Available Hosts", you should see your Domain Controller machine, click on it and it will populate into "Selected Hosts", set the "New Server Class Name" to "Domain Controller", click next. On the next window, click "Local Event Logs" and choose all of the available event logs. Here, you can choose to configure any of the other desired settings you want to monitor. I may go back and look deeper into this in the future, but for this initial setup I only chose the Local Event Logs, click next. On the next window next to "Index", click the dropdown and choose "wineventlogs", click review, click submit.</li>
+ <li>At this point all of the initial setup for the Home Lab is complete!</li>
+</ol>
+ 
+ <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Forwarding-Windows-Event-Logs-to-Splunk-with-the-Universal-Forwarder">Click here to view photo documentation for each step of the Splunk configuration process.</a>
 <br />
 
 <!--
