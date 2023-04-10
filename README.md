@@ -183,7 +183,7 @@
  
  <a href = "https://github.com/harleydel/Cybersecurity-Home-Lab/wiki/Installing-and-Configuring-Splunk-on-Ubuntu-Server-as-our-SIEM">Click here to view photo documentation for each step of the Splunk configuration process.</a>
  
-  <h3><a id = "forwarding">Installing Universal Forwarded on Windows Server</a></h3>
+  <h3><a id = "forwarding">Installing Universal Forwarder on Windows Server</a></h3>
 <ol>
  <li>The final step is to configure the Universal Forwarder to be able to send Windows Event Logs to Splunk. To do this, first start up your Splunk instance and log in through the browser.</li>
  <li>When logged in, navigate to Settings > Forwarding and Receiving > Configure Receiving > Click "New Receiving Port". <b>Set "Listen on this port" to port 9997</b>, and click "save".</li>
